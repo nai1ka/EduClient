@@ -1,0 +1,6 @@
+<resources>
+
+    <dimen name="standard_55">55dp</dimen>
+    <dimen name="standard_120">120dp</dimen>
+    <dimen name="standard_185">185dp</dimen>
+</resources>

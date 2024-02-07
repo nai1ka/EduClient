@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rv_container"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/div_single"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- <TextView
+             android:id="@+id/tv_time_1"
+             android:textSize="18sp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             tools:text="8:30-9:25" />-->
+        <TextView
+            android:id="@+id/tv_lesson"
+            style="@style/RV_Lesson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Алгебра" />
+
+        <TextView
+            android:id="@+id/tv_homework"
+            style="@style/RV_Task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Сделать рабочую тетрадь" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_single"
+        style="@style/RV_Divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_mark"
+        style="@style/RV_Mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/div_single"
+        tools:text="5"
+        tools:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

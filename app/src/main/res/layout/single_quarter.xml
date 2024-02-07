@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_quarter_name"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        tools:text="Русский язык"
+        android:paddingStart="4dp"
+        android:paddingEnd="16dp">
+
+    </TextView>
+
+    <TextView
+        style="@style/RV_Mark"
+        android:id="@+id/tv_quarter_mark"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="24sp"
+        tools:text="5" />
+</LinearLayout>
+
+    <View
+        android:id="@+id/div_quarter"
+        style="@style/RV_Divider"
+        android:layout_width="match_parent" />
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name = "mainParentThemeDark" parent = "Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name ="cardBackgroundColor">@color/darkThemeSurfaceColor</item>
+        <item name="dialogTheme">@style/Theme.MaterialComponents.DayNight.Dialog</item>
+        <item name ="android:textColor">@color/textColorNight</item>
+        <item name="tabBackground">@color/darkThemeSurfaceColor</item>
+        <item name="tabTextColor">#ececec</item>
+    </style>
+    <style name="AvocadoTheme" parent="mainParentThemeDark">
+        <item name="colorPrimary">#68B2A0</item>
+        <item name="colorPrimaryDark">#2C6975</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <style name="DefaultNoActionBar" parent="mainParentThemeDark">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="SplashTheme" parent="mainParentThemeDark">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimaryDark">#028174</item>
+    </style>
+
+    <style name="PurpleTheme" parent="mainParentThemeDark">
+        <item name="colorPrimary">#752092</item>
+        <item name="colorPrimaryDark">#631A7C</item>
+        <item name="colorAccent">#FFC872</item>
+    </style>
+    <style name="OrangeTheme" parent="mainParentThemeDark">
+        <item name="colorPrimary">#E68459</item>
+        <item name="colorPrimaryDark">#BF5B4B</item>
+        <item name="colorAccent">#E9C96B</item>
+    </style>
+    <style name="BlueTheme" parent="mainParentThemeDark">
+        <item name="colorPrimary">#08546C</item>
+        <item name="colorPrimaryDark">#022534</item>
+        <item name="colorAccent">#A0BACC</item>
+    </style>
+    <style name="KiwiTheme" parent="mainParentThemeDark">
+        <item name="colorPrimary">#0ab68b</item>
+        <item name="colorPrimaryDark">#028174</item>
+        <item name="colorAccent">#92de8b</item>
+
+    </style>
+    <style name="StrawberryTheme" parent="mainParentThemeDark">
+        <item name="colorPrimary">#EE8980</item>
+        <item name="colorPrimaryDark">#F14666</item>
+        <item name="colorAccent">#FFCDAA</item>
+    </style>
+    <style name="WatermelonTheme" parent="mainParentThemeDark">
+        <item name="colorPrimary">#c3e5ae</item>
+        <item name="colorPrimaryDark">#97dbae</item>
+        <item name="colorAccent">#f1e1a6</item>
+    </style>
+
+</resources>

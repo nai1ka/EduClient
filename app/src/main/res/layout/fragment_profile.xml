@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/DefaultNoActionBar"
+
+    tools:context=".ui.mainActivity.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/profileBackGround"
+        tools:context=".ui.profile.ProfileFragment">
+        <RelativeLayout
+            android:background="@color/colorProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_exit"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:contentDescription="Выйти из данного пользовтеля"
+                android:onClick="onExitClicked"
+                android:rotation="-180"
+                android:rotationY="4"
+                app:srcCompat="@drawable/ic_baseline_exit_to_app_24" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.8"
+                app:shapeAppearanceOverlay="@style/circleImageView"
+                app:srcCompat="@drawable/ic_avatar"
+                tools:src="@drawable/ic_avatar" />
+            <RelativeLayout
+                android:id="@+id/loadingPanel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/iv_profile"
+                android:layout_alignBottom="@+id/iv_profile"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/iv_profile"
+                app:layout_constraintTop_toBottomOf="@+id/iv_profile">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_change_profile"
+                android:layout_width="48dp"
+
+                android:layout_height="48dp"
+                android:layout_alignEnd="@+id/iv_profile"
+                android:layout_alignBottom="@+id/iv_profile"
+                android:contentDescription="Сменить пользователя"
+                app:layout_constraintEnd_toEndOf="@+id/iv_profile"
+                app:layout_constraintTop_toBottomOf="@+id/iv_profile"
+                app:srcCompat="@drawable/ic_baseline_add_circle_24" />
+
+            <ImageView
+                android:id="@+id/iv_settings"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                app:srcCompat="@drawable/ic_baseline_settings_24"
+                android:contentDescription="Настройки" />
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    style="@style/ProfileUsualText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ФИО:" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/ProfileUserText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Миннемуллин Наиль Фидаилевич" />
+
+                <View
+                    style="@style/ProfileDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey" />
+
+                <TextView
+                    style="@style/ProfileUsualText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Школа:" />
+
+                <TextView
+                    android:id="@+id/tv_school"
+                    style="@style/ProfileUserText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Муниципальное бюджетное общеобразовательное учреждение Лицей № 177 Ново-Савиновского района г. Казани. Казан шәһәре Яңа Савин районының 177 нче лицей гомуми белем бюджет муниципаль учреждениесе" />
+
+                <View
+                    style="@style/ProfileDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey" />
+
+                <TextView
+                    style="@style/ProfileUsualText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Дата рождения:" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    style="@style/ProfileUserText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="23.10.2004" />
+
+                <View
+                    style="@style/ProfileDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey" />
+
+                <TextView
+                    style="@style/ProfileUsualText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Пол:" />
+
+                <TextView
+                    android:id="@+id/tv_sex"
+                    style="@style/ProfileUserText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="мужской" />
+
+                <View
+                    style="@style/ProfileDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey" />
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
+

@@ -1,0 +1,57 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <PreferenceCategory app:title="@string/theme_header">
+        <!--<ListPreference
+            app:entries="@array/theme_entries"
+            app:entryValues="@array/theme_values"
+            app:key="THEME_TYPE"
+            app:title="@string/theme_name"
+            app:defaultValue="Default"
+            app:useSimpleSummaryProvider="true" />-->
+        <ListPreference
+            app:defaultValue="Kiwi"
+            app:entries="@array/theme_color_entries"
+            app:entryValues="@array/theme_color_values"
+            app:key="THEME"
+            app:title="@string/theme_color"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="ONLY_ONE_DAY_DIARY"
+            android:title="Отображать только один день"
+            android:summary="Если включено, на странице дневника каждый день отображается отдельно"/>
+
+        <PreferenceScreen
+            android:key="CHANGE_BG"
+            android:summary="Позволяет изменить настройки заднего фона"
+            android:title="Выбрать задний фон">
+
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/other_header">
+        <ListPreference
+            app:defaultValue="Diary"
+            app:entries="@array/start_entries"
+            app:entryValues="@array/start_values"
+            app:key="START"
+            app:title="@string/start_name"
+            app:useSimpleSummaryProvider="true" />
+        <PreferenceScreen
+            android:key="DISABLE_ADS"
+            android:summary="Навсегда отключает баннер внизу экрана"
+            android:title="Отключить рекламу" />
+
+        <PreferenceScreen
+            android:key="DEVELOPER_SITE"
+            android:singleLine="true"
+            android:summary="Откроется страница в браузере"
+            android:title="Связь с разработчиком" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

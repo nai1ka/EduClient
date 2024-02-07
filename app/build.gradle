@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdk 33
+    buildToolsVersion '33.0.0'
+
+    defaultConfig {
+        applicationId "ru.ndevelop.educlient"
+        minSdkVersion 19
+        targetSdk 33
+        versionCode 42
+        versionName "2.6"
+        multiDexEnabled true
+        android.defaultConfig.vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
+
+// To inline the bytecode built with JVM target 1.8 into
+// bytecode that is being built with JVM target 1.6. (e.g. navArgs)
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+    namespace 'ru.ndevelop.educlient'
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.tuyenmonkey:mkloader:1.4.0'
+    implementation 'com.android.billingclient:billing:5.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.6.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.6.0'
+    implementation 'org.jsoup:jsoup:1.13.1'
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+    implementation 'com.google.firebase:firebase-firestore:24.6.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-crashlytics:18.3.7'
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'org.apache.commons:commons-collections4:4.4'
+    implementation "androidx.preference:preference-ktx:1.2.0"
+    implementation 'com.google.code.gson:gson:2.9.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.work:work-runtime-ktx:2.8.1'
+    implementation 'com.google.firebase:firebase-analytics:21.3.0'
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation 'com.google.android.flexbox:flexbox:3.0.0'
+    implementation 'com.yandex.android:mobileads:5.10.0'
+    implementation 'kxml2:kxml2:2.3.0'
+}
+

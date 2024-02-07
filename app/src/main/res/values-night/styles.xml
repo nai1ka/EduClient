@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="UserControlBg">
+        <item name="android:background">@color/colorLightDark</item>
+    </style>
+
+    <style name="profileBackGround">
+        <item name="android:background">@color/darkThemeSurfaceColor</item>
+    </style>
+
+    <style name="bottomSheetStyle">
+        <item name="android:backgroundTint" tools:ignore="NewApi">@color/darkThemeSurfaceColor
+        </item>
+        <item name="android:background" tools:ignore="NewApi">@color/darkThemeSurfaceColor</item>
+    </style>
+
+    <style name="TableMark">
+        <item name="android:textColor">#ff6768</item>
+    </style>
+
+    <style name="RV_Mark">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:textColor">#ff6768</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:textSize">28sp</item>
+
+
+    </style>
+
+    <style name="HomeworkCheckBox">
+        <item name="buttonTint">@color/colorLightGrey</item>
+    </style>
+
+    <style name="adBannerBackground">profileBackGround
+        <item name="android:background">@color/darkThemeSurfaceColor</item>
+    </style>
+    <style name="roundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+    <style name="emojiImageView" parent="">
+        <item name="tint">@color/colorLightGrey</item>
+    </style>
+
+    <style name="MKLoaderStyle">
+        <item name="mk_color">@color/colorLightGrey</item>
+    </style>
+
+</resources>

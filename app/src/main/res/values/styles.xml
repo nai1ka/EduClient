@@ -1,0 +1,126 @@
+<resources>
+
+    <style name="RV_Item">
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <style name="RV_Lesson" parent="RV_Item">
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+
+    </style>
+    <style name="bottomSheetStyle">
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+    <style name="RV_Divider" parent="RV_Item">
+        <item name="android:layout_height">2dp</item>
+
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:background">@color/colorGrey</item>
+    </style>
+
+    <style name="RV_Divider.Homework">
+        <item name="android:visibility">visible</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="RV_Task" parent="RV_Item">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginEnd">48sp</item>
+    </style>
+    <style name="TableMark">
+        <item name="android:textColor">#D60E0E</item>
+    </style>
+    <style name="RV_Mark">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:textColor">#D60E0E</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:textSize">28sp</item>
+
+
+    </style>
+    <style name="DialogTheme_transparent" parent="AvocadoTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--You can set other style items also, such as animations and etc-->
+    </style>
+
+    <style name="ProfileUsualText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:fontFamily">@font/balsamic</item>
+        <item name="android:textColor">@color/colorGrey</item>
+
+
+    </style>
+
+
+    <style name="ProfileUserText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/balsamic</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="ProfileDivider">
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+
+
+    </style>
+
+    <style name="CustomToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+        <item name="colorControlNormal">@color/colorProfile</item>
+    </style>
+
+    <style name="circleImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="TabLayoutText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="HomeworkCheckBox">
+        <item name="buttonTint">?colorPrimary</item>
+    </style>
+    <style name="MarkButtonTextView">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+    <style name="ThemeOverlay.App.CheckBox" parent="">
+        <item name="colorOnSurface">?colorPrimary</item>
+        <item name="colorSecondary">@color/colorLightGrey</item>
+    </style>
+    <style name="Widget.App.CheckBox" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.CheckBox</item>
+    </style>
+
+    <style name="UserControlBg">UserControlBg
+    <item name="android:background">@color/colorLightGrey</item></style>
+
+    <style name="profileBackGround">profileBackGround
+        <item name="android:background">@color/colorWhite</item></style>
+    <style name="adBannerBackground">profileBackGround
+        <item name="android:background">@color/colorWhite</item></style>
+    <style name="roundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+    <style name="emojiImageView">
+        <item name="tint">@color/colorLightDarkDark</item>
+    </style>
+    <style name="MKLoaderStyle">
+        <item name="mk_color">@color/colorLightDark</item>
+    </style>
+
+</resources>

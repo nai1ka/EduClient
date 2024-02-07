@@ -1,0 +1,52 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="theme_color_entries">
+        <item>Авокадо</item>
+        <item>Киви</item>
+        <item>Слива</item>
+        <item>Апельсин</item>
+        <item>Голубика</item>
+        <item>Клубника</item>
+        <item>Мята</item>
+    </string-array>
+
+    <string-array name="theme_color_values">
+        <item>Avocado</item>
+        <item>Kiwi</item>
+        <item>Purple</item>
+        <item>Orange</item>
+        <item>Blue</item>
+        <item>Strawberry</item>
+        <item>Watermelon</item>
+
+    </string-array>
+
+    <string-array name="start_entries">
+        <item>Профиль</item>
+        <item>Дневник</item>
+        <item>Домашка</item>
+        <item>Табель</item>
+    </string-array>
+
+
+    <string-array name="start_values">
+        <item>Profile</item>
+        <item>Diary</item>
+        <item>Homework</item>
+        <item>Table</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>Default</item>
+    </string-array>
+
+    <string-array name="theme_entries">
+        <item>Светлая</item>
+        <item>Тёмная</item>
+        <item>Системная</item>
+    </string-array>
+
+
+</resources>

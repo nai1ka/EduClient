@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "75331287844",
+    "firebase_url": "https://educlient-a3360.firebaseio.com",
+    "project_id": "educlient-a3360",
+    "storage_bucket": "educlient-a3360.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75331287844:android:d744f10ac132e722b611b1",
+        "android_client_info": {
+          "package_name": "ru.ndevelop.educlient"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75331287844-kg01hqqcohjdoeqd4sl004ghu0mhi0e8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO1sCloFJGIzXKj8rvjn-YT3nR8n54QG8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75331287844-kg01hqqcohjdoeqd4sl004ghu0mhi0e8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

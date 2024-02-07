@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">EduClient</string>
+    <string name="title_profile">Профиль</string>
+    <string name="title_diary">Дневник</string>
+    <string name="title_table">Табель</string>
+    <string name="title_homework">Домашка</string>
+    <string name="errorString">Данные не заполнены</string>
+    <string name="theme_header">Внешний вид</string>
+    <string name="other_header">Остальное</string>
+    <string name="theme_color">Тема</string>
+    <string name="start_name">Начальный экран</string>
+    <string name="bg_name">Тема</string>
+    <string name="bg_key">CHANGE_BG</string>
+    <string name="ads_key">DISABLE_ADS</string>
+    <string name="final_mark">Итоговый балл:</string>
+    <string name="number1">1</string>
+    <string name="number2">2</string>
+    <string name="number3">3</string>
+    <string name="number4">4</string>
+    <string name="number5">5</string>
+    <string name="current_mark">Текущий балл:</string>
+    <string name="wanted_mark">Введите желаемый балл:</string>
+    <string name="result_mark">Результат:</string>
+    <string name="calculate_mark">Рассчитать</string>
+    <string name="number_of5">Количество пятёрок</string>
+    <string name="user_avatar">Аватар пользователя</string>
+    <string name="recyclerbin_icon">Удалить</string>
+    <string name="theme_name">Тема</string>
+    <string name="reset">Сброс</string>
+    <string name="loading">Загрузка данных...</string>
+    <string name="loading_error">Ошибка загрузки</string>
+    <string name="loading_error2">Ошибка загрузки, попробуйте позже...\n(Возможно, ещё нет данных)</string>
+    <!-- Strings used for fragments for navigation -->
+
+</resources>
