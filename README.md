@@ -15,8 +15,8 @@ EduClient is an app that allows users to:
 - Offline data viewing through caching
 - Access to the Electronic Education in Tatarstan ([edu.tatar.ru](https://edu.tatar.ru))
 
-<div style="display: flex; justify-content: space-between;">
-    <img src="images/1.jpg" alt="1.jpg" width="200">
-    <img src="images/2.jpg" alt="2.jpg" width="200">
-    <img src="images/3.jpg" alt="3.jpg" width="200">
+<div style="display: flex; flex: 1; justify-content: space-around;">
+    <img src="images/1.jpg" alt="1.jpg" style="flex: 1;">
+    <img src="images/2.jpg" alt="2.jpg" style="flex: 1;">
+    <img src="images/3.jpg" alt="3.jpg" style="flex: 1;">
 </div>
